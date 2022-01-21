@@ -1,4 +1,31 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color: black;
+    font-family: arial;
+    color: white
+  }
+  
+  h1 {
+    color: grey;
+    font-family: verdana
+  }
+  
+  .maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    text: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    width: 122px;
+    margin: 5px;
+    text-align: left;
+    line-height: 15px;
+  }
