@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+  <head>
     <title>Any relevant title you want to give</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
-        
-        <div class="flex-container">
-          <div>Amount</div>
-          <div><input type="number" id="principal" ></div>
-        </div>
-        
-        <div class="flex-container">
-          <div>Interest Rate</div>
-          <div> <input  type="range" onchange="updateRate()" id="rate"  min="1" max="20" step=".25" value="default_val"></div>
-          <div><span id="rate_val"> 10.50%</span></div> 
-        </div>
-        
-        <div class="flex-container">
-          <div>No. of Years</div>
-          <div><select id="years">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              </select></div>
-           </div>
-           <br/>
+  </head>
 
-        <button onclick="compute()">Compute Interest</button>
-        <br/><br/>
+  <body>
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1>
+
+      <div class="flex-container">
+        <div>Amount</div>
+        <div><input type="number" id="principal"></div>
+        <div></div>
+      </div>
+
+      <div class="flex-container">
+        <div>Interest Rate</div>
+        <div> <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step=".25" value="default_val"></div>
+        <div><span id="rate_val"> 10.50%</span></div>
+      </div>
+
+      <div class="flex-container">
+        <div>No. of Years</div>
+        <div><select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></div>
+        <div></div>
+      </div>
+      
+      <div class="flex-container">
+        <div><button onclick="compute()">Compute Interest</button></div>
+        <div></div>
+        <div></div>
+        </div>
+        <br /><br />
         <span id="result"></span>
-      <footer>
-        <br>&#169; This Calculator belongs to David Cowett
-      </footer>
-     </div>  
-    </body>
+        <footer>
+          <br>&#169; This Calculator belongs to David Cowett
+        </footer>
+        </div>
+        </body>
 </html>
